@@ -17,7 +17,7 @@
       {
         "platform": "bluesky",
         "url": "https://bsky.app/profile/pixelachestudio.bsky.social",
-        "icon": "fab fa-cloud"
+        "icon": "fas fa-cloud"
       },
       {
         "platform": "instagram",
@@ -28,6 +28,11 @@
         "platform": "youtube",
         "url": "https://youtube.com/@PixelAcheStudio",
         "icon": "fab fa-youtube"
+      },
+      {
+        "platform": "new-platform",
+        "url": "https://",
+        "icon": "fas fa-link"
       }
     ],
     "email": "pixel.ache.studio@gmail.com",
@@ -43,7 +48,21 @@
       "ja": {
         "title": "Pixel Ache Studio",
         "description": "ピクセルアートベースのインディーゲーム開発スタジオ"
+      },
+      "es": {
+        "title": "",
+        "description": ""
+      },
+      "fr": {
+        "title": "",
+        "description": ""
       }
+    },
+    "customFonts": [],
+    "translations": {
+      "ko": {},
+      "en": {},
+      "ja": {}
     }
   },
   "portfolio": [
@@ -74,9 +93,20 @@
             "アクション",
             "アドベンチャー"
           ]
+        },
+        "es": {
+          "title": "test",
+          "description": "test",
+          "tags": []
+        },
+        "fr": {
+          "title": "",
+          "description": "",
+          "tags": []
         }
       },
       "link": "https://store.steampowered.com/app/1284190/The_Planet_Crafter/",
+      "linkType": "auto",
       "youtubeUrl": "https://www.youtube.com/watch?v=example",
       "imageUrl": "",
       "socialCard": {
@@ -84,8 +114,7 @@
         "description": "Check out our latest game!",
         "image": "./images/featured-game.png"
       },
-      "createdAt": "2026-01-14T00:00:00Z",
-      "linkType": "auto"
+      "createdAt": "2026-01-14T00:00:00Z"
     },
     {
       "id": "1",
