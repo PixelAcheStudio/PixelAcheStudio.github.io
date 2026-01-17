@@ -297,8 +297,25 @@ const AdminPanel = (function() {
         }
         if (!portfolioData.settings.meta[lang]) {
             portfolioData.settings.meta[lang] = { title: '', description: '' };
-            populateMeta();
         }
+        if (!portfolioData.settings.translations) {
+            portfolioData.settings.translations = {};
+        }
+        if (!portfolioData.settings.translations[lang]) {
+            portfolioData.settings.translations[lang] = {};
+        }
+
+        if (portfolioData.portfolio) {
+            portfolioData.portfolio.forEach(item => {
+                if (!item.content[lang]) {
+                    item.content[lang] = { title: '', description: '', tags: [] };
+                }
+            });
+        }
+
+        populateMeta();
+        populateTranslations();
+        updateJSONEditor();
     }
 
     function removeLanguage(lang) {
@@ -1060,57 +1077,7 @@ const AdminPanel = (function() {
     }
 
     function collectPortfolio() {
-        const portfolio = [];
-        const items = document.querySelectorAll('.portfolio-item');
-
-        items.forEach((item, index) => {
-            const dataIndex = item.getAttribute('data-index');
-            const originalItem = portfolioData.portfolio[dataIndex] || {};
-
-            const portfolioItem = {
-                id: originalItem.id || String(Date.now() + index),
-                featured: false,
-                content: {
-                    ko: { title: '', description: '', tags: [] },
-                    en: { title: '', description: '', tags: [] },
-                    ja: { title: '', description: '', tags: [] }
-                },
-                link: '',
-                youtubeUrl: '',
-                imageUrl: '',
-                socialCard: {
-                    title: '',
-                    description: '',
-                    image: ''
-                },
-                createdAt: originalItem.createdAt || new Date().toISOString()
-            };
-
-            const inputs = item.querySelectorAll('[data-index]');
-            inputs.forEach(input => {
-                const field = input.dataset.field;
-                const lang = input.dataset.lang;
-
-                if (field === 'featured') {
-                    portfolioItem.featured = input.checked;
-                } else if (lang) {
-                    if (field === 'tags') {
-                        portfolioItem.content[lang].tags = input.value.split(',').map(t => t.trim()).filter(t => t);
-                    } else {
-                        portfolioItem.content[lang][field] = input.value;
-                    }
-                } else if (field.startsWith('socialCard.')) {
-                    const socialCardField = field.split('.')[1];
-                    portfolioItem.socialCard[socialCardField] = input.value;
-                } else {
-                    portfolioItem[field] = input.value;
-                }
-            });
-
-            portfolio.push(portfolioItem);
-        });
-
-        return portfolio;
+        return portfolioData.portfolio || [];
     }
 
     function setupDragAndDrop() {

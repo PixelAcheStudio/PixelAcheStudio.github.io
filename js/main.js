@@ -236,6 +236,8 @@ function updateSiteMetaTags(title, description) {
 function renderContent() {
     if (!data) return;
 
+    renderLanguageSelector();
+
     renderSocialLinks();
 
     renderFooterEmail();
@@ -243,6 +245,37 @@ function renderContent() {
     renderHomePage();
 
     updateLanguage();
+}
+
+function renderLanguageSelector() {
+    const selector = document.getElementById('languageSelector');
+    if (!selector || !data.settings || !data.settings.meta) return;
+
+    const languages = Object.keys(data.settings.meta);
+    if (languages.length === 0) return;
+
+    const languageNames = {
+        'ko': '한국어',
+        'en': 'English',
+        'ja': '日本語',
+        'zh': '中文',
+        'es': 'Español',
+        'fr': 'Français',
+        'de': 'Deutsch'
+    };
+
+    selector.innerHTML = languages.map(lang => {
+        const displayName = languageNames[lang] || lang.toUpperCase();
+        return `<option value="${lang}">${displayName}</option>`;
+    }).join('');
+
+    if (languages.includes(currentLang)) {
+        selector.value = currentLang;
+    } else {
+        currentLang = languages[0];
+        selector.value = currentLang;
+        localStorage.setItem('language', currentLang);
+    }
 }
 
 function renderSocialLinks() {
@@ -295,7 +328,7 @@ function renderHomePage() {
 
 
 function renderFeaturedPortfolio(item) {
-    const content = item.content[currentLang];
+    const content = item.content[currentLang] || item.content['ko'] || item.content['en'] || Object.values(item.content)[0];
     if (!content) return '';
 
     const translations = getTranslations();
@@ -358,7 +391,7 @@ function getSteamAppId(url) {
 }
 
 function renderPortfolioCard(item) {
-    const content = item.content[currentLang];
+    const content = item.content[currentLang] || item.content['ko'] || item.content['en'] || Object.values(item.content)[0];
     if (!content) return '';
 
     const translations = getTranslations();

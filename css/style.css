@@ -511,9 +511,9 @@ a:hover {
 
 /* News Section Styles */
 .news-section {
-    max-width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 4rem 1rem;
+    padding: 4rem 3rem;
     scroll-margin-top: 80px;
 }
 
@@ -829,7 +829,7 @@ a:hover {
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+    gap: 1.5rem;
     padding: 2rem 0;
 }
 
@@ -1058,7 +1058,7 @@ a:hover {
     }
 
     .news-section {
-        padding: 3rem 1rem;
+        padding: 3rem 1.5rem;
     }
 
     .news-grid {
@@ -1113,6 +1113,12 @@ a:hover {
     .portfolio-description {
         font-size: 0.95rem;
     }
+
+    .main-title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        word-break: keep-all;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1165,8 +1171,13 @@ a:hover {
         font-size: 0.8rem;
     }
 
+    .main-title {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
     .news-section {
-        padding: 2rem 0.75rem;
+        padding: 2rem 1rem;
     }
 
     .news-grid {

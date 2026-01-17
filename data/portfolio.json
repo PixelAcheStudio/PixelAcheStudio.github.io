@@ -12,7 +12,7 @@
       {
         "platform": "twitter",
         "url": "https://x.com/PixelAcheStudio",
-        "icon": "fab fa-twitter"
+        "icon": "fab fa-x-twitter"
       },
       {
         "platform": "bluesky",
@@ -28,14 +28,10 @@
         "platform": "youtube",
         "url": "https://youtube.com/@PixelAcheStudio",
         "icon": "fab fa-youtube"
-      },
-      {
-        "platform": "new-platform",
-        "url": "https://",
-        "icon": "fas fa-link"
       }
     ],
     "email": "pixel.ache.studio@gmail.com",
+    "twitterHandle": "@PixelAcheStudio",
     "meta": {
       "ko": {
         "title": "Pixel Ache Studio",
@@ -48,153 +44,109 @@
       "ja": {
         "title": "Pixel Ache Studio",
         "description": "ピクセルアートベースのインディーゲーム開発スタジオ"
-      },
-      "es": {
-        "title": "",
-        "description": ""
-      },
-      "fr": {
-        "title": "",
-        "description": ""
       }
     },
-    "customFonts": [],
     "translations": {
       "ko": {},
       "en": {},
       "ja": {}
-    }
+    },
+    "ogImage": "",
+    "customFonts": []
   },
   "portfolio": [
     {
-      "id": "featured",
+      "id": "featured-1",
       "featured": true,
       "content": {
         "ko": {
-          "title": "대표 게임 제목",
-          "description": "이 게임은 픽셀 아트 스타일의 멋진 게임입니다. 다양한 모험을 즐겨보세요.",
-          "tags": [
-            "액션",
-            "어드벤처"
-          ]
+          "title": "Dungeon Crawler",
+          "description": "어둠 속에서 빛을 찾아 나서는 로그라이크 던전 탐험 게임입니다. 픽셀 아트로 구현된 다양한 몬스터와 아이템, 그리고 매번 새롭게 생성되는 던전을 탐험하세요. 전략적인 전투와 자원 관리가 핵심인 도전적인 게임플레이를 경험해보세요.",
+          "tags": ["로그라이크", "던전", "픽셀아트", "액션"]
         },
         "en": {
-          "title": "Featured Game Title",
-          "description": "This is an amazing pixel art style game. Enjoy various adventures.",
-          "tags": [
-            "Action",
-            "Adventure"
-          ]
+          "title": "Dungeon Crawler",
+          "description": "A roguelike dungeon exploration game where you search for light in the darkness. Explore dungeons filled with pixel art monsters and items, with procedurally generated levels. Experience challenging gameplay with strategic combat and resource management.",
+          "tags": ["Roguelike", "Dungeon", "Pixel Art", "Action"]
         },
         "ja": {
-          "title": "代表ゲームタイトル",
-          "description": "このゲームはピクセルアートスタイルの素晴らしいゲームです。様々な冒険をお楽しみください。",
-          "tags": [
-            "アクション",
-            "アドベンチャー"
-          ]
-        },
-        "es": {
-          "title": "test",
-          "description": "test",
-          "tags": []
-        },
-        "fr": {
-          "title": "",
-          "description": "",
-          "tags": []
-        }
-      },
-      "link": "https://store.steampowered.com/app/1284190/The_Planet_Crafter/",
-      "linkType": "auto",
-      "youtubeUrl": "https://www.youtube.com/watch?v=example",
-      "imageUrl": "",
-      "socialCard": {
-        "title": "Featured Game - Pixel Ache Studio",
-        "description": "Check out our latest game!",
-        "image": "./images/featured-game.png"
-      },
-      "createdAt": "2026-01-14T00:00:00Z"
-    },
-    {
-      "id": "1",
-      "featured": false,
-      "content": {
-        "ko": {
-          "title": "게임 프로젝트 1",
-          "description": "첫 번째 게임 프로젝트 설명입니다.",
-          "tags": [
-            "퍼즐",
-            "싱글플레이"
-          ]
-        },
-        "en": {
-          "title": "Game Project 1",
-          "description": "Description of the first game project.",
-          "tags": [
-            "Puzzle",
-            "Single-player"
-          ]
-        },
-        "ja": {
-          "title": "ゲームプロジェクト1",
-          "description": "最初のゲームプロジェクトの説明です。",
-          "tags": [
-            "パズル",
-            "シングルプレイ"
-          ]
-        }
-      },
-      "link": "https://store.steampowered.com/app/1284190/The_Planet_Crafter/",
-      "youtubeUrl": "",
-      "imageUrl": "./images/game1.png",
-      "socialCard": {
-        "title": "Game Project 1",
-        "description": "Our first game project",
-        "image": "./images/game1.png"
-      },
-      "createdAt": "2026-01-13T00:00:00Z",
-      "linkType": "auto"
-    },
-    {
-      "id": "2",
-      "featured": false,
-      "content": {
-        "ko": {
-          "title": "게임 프로젝트 2",
-          "description": "두 번째 게임 프로젝트 설명입니다.",
-          "tags": [
-            "RPG",
-            "멀티플레이"
-          ]
-        },
-        "en": {
-          "title": "Game Project 2",
-          "description": "Description of the second game project.",
-          "tags": [
-            "RPG",
-            "Multi-player"
-          ]
-        },
-        "ja": {
-          "title": "ゲームプロジェクト2",
-          "description": "2番目のゲームプロジェクトの説明です。",
-          "tags": [
-            "RPG",
-            "マルチプレイ"
-          ]
+          "title": "Dungeon Crawler",
+          "description": "闇の中で光を探すローグライクダンジョン探検ゲームです。ピクセルアートで描かれた様々なモンスターとアイテム、そして毎回新しく生成されるダンジョンを探検してください。戦略的な戦闘とリソース管理が核心の挑戦的なゲームプレイを体験してください。",
+          "tags": ["ローグライク", "ダンジョン", "ピクセルアート", "アクション"]
         }
       },
       "link": "",
+      "linkType": "auto",
       "youtubeUrl": "",
-      "imageUrl": "./images/game2.png",
+      "imageUrl": "https://placehold.co/1200x600/0A0A0F/00FF00?text=Dungeon+Crawler",
       "socialCard": {
-        "title": "Game Project 2",
-        "description": "Our second game project",
-        "image": "./images/game2.png"
+        "title": "Dungeon Crawler - Pixel Ache Studio",
+        "description": "A roguelike dungeon exploration game",
+        "image": ""
       },
-      "createdAt": "2026-01-12T00:00:00Z",
-      "linkType": "auto"
+      "createdAt": "2026-01-17T00:00:00Z"
+    },
+    {
+      "id": "news-1",
+      "featured": false,
+      "content": {
+        "ko": {
+          "title": "개발 일지 #1",
+          "description": "새로운 프로젝트의 시작을 알립니다! 이번 개발 일지에서는 게임의 핵심 메카닉과 아트 스타일에 대해 소개합니다.",
+          "tags": ["개발일지", "소식"]
+        },
+        "en": {
+          "title": "Dev Log #1",
+          "description": "Announcing the start of our new project! In this dev log, we introduce the core mechanics and art style of the game.",
+          "tags": ["DevLog", "News"]
+        },
+        "ja": {
+          "title": "開発日記 #1",
+          "description": "新しいプロジェクトの開始をお知らせします！この開発日記では、ゲームのコアメカニクスとアートスタイルについて紹介します。",
+          "tags": ["開発日記", "ニュース"]
+        }
+      },
+      "link": "",
+      "linkType": "auto",
+      "youtubeUrl": "",
+      "imageUrl": "https://placehold.co/600x400/0A0A0F/00FFFF?text=Dev+Log+1",
+      "socialCard": {
+        "title": "",
+        "description": "",
+        "image": ""
+      },
+      "createdAt": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "news-2",
+      "featured": false,
+      "content": {
+        "ko": {
+          "title": "스튜디오 소개",
+          "description": "Pixel Ache Studio는 픽셀 아트에 대한 열정을 가진 인디 게임 개발팀입니다. 레트로 감성과 현대적인 게임플레이의 조화를 추구합니다.",
+          "tags": ["소개", "스튜디오"]
+        },
+        "en": {
+          "title": "Studio Introduction",
+          "description": "Pixel Ache Studio is an indie game development team with a passion for pixel art. We pursue a harmony of retro aesthetics and modern gameplay.",
+          "tags": ["Introduction", "Studio"]
+        },
+        "ja": {
+          "title": "スタジオ紹介",
+          "description": "Pixel Ache Studioは、ピクセルアートに情熱を持つインディーゲーム開発チームです。レトロな感性と現代的なゲームプレイの調和を追求しています。",
+          "tags": ["紹介", "スタジオ"]
+        }
+      },
+      "link": "",
+      "linkType": "auto",
+      "youtubeUrl": "",
+      "imageUrl": "https://placehold.co/600x400/0A0A0F/B100FF?text=Studio+Intro",
+      "socialCard": {
+        "title": "",
+        "description": "",
+        "image": ""
+      },
+      "createdAt": "2026-01-14T00:00:00Z"
     }
   ]
 }
